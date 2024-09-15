@@ -1,0 +1,57 @@
+@import "variable";
+body {
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: fit-content;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.register{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main-home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 70px);
+    height: fit-content;
+    max-height: fit-content;
+    position: absolute;
+    transition: all 500ms ease;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    // background-color: chocolate;
+}
+
+@media only screen and (max-width: 1000px){
+    .main-home-page{
+        width: 100vw;
+        min-height: calc(100vh + 80px);
+    }
+}
